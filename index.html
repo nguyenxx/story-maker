@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Story Maker</title>
+
+<style type="text/css">
+
+section { padding-left: 37px; }
+
+</style>
+
+<script type="text/javascript">
+function myFunction() {
+  var noun = document.getElementById("noun").value;
+  var adj = document.getElementById("adj").value;
+  var name = document.getElementById("name").value;
+  document.getElementById("showquote").innerHTML = name + " likes a " + adj + " " + noun + ".";
+}
+</script>
+</head>
+
+<body>
+<h1>Story Maker</h1>
+
+<section>
+<p>Noun: <input type="text" id="noun"></p>
+<p>Adjective: <input type="text" id="adj"></p>
+<p>Someone's name: <input type="text" id="name"></p>
+</section>
+
+<button onclick="myFunction()">Make Story</button>
+<p id="showquote"></p>
+
+</body>
+</html>
+
